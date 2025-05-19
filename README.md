@@ -91,11 +91,11 @@ src/
 ## 🖼️ Screenshots
 
 ### 🌞 Light Mode
-![Light Mode](./assets/img1.png)
-![Light Mode](./assets/img2.png)
+![Light Mode](src/assets/img1.png)
+![Light Mode](src/assets/img2.png)
 
 ### 🌙 Dark Mode
-![Dark Mode](./assets/img3.png)
+![Dark Mode](src/assets/img3.png)
 
 ---
 
