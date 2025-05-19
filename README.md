@@ -4,6 +4,9 @@ The **Todo Manager App** is a powerful and user-friendly application built with 
 
 ---
 
+🌐 **Live Demo:** https://taskifymaneger.netlify.app
+
+
 ## 🚀 Features
 
 - ✅ **Add new todos** with:
