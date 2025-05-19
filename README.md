@@ -1,79 +1,112 @@
-# Todo List React Application
+# 📝 Todo Manager App (React + Firebase)
 
-## Overview
-A modern Todo List application built with React and Firebase, providing real-time data synchronization
+The **Todo Manager App** is a powerful and user-friendly application built with **React** and **Firebase Realtime Database**. It allows users to add, edit, delete, search, filter, and sort tasks, with support for both light and dark themes, as well as a built-in calendar for setting due dates.
 
-## Tech Stack
-- React - Frontend library
-- Vite - Build tool and development server
-- Firebase - Backend and Authentication
-  - Firestore - Database
-  - Firebase Auth - User Authentication
-- CSS - Styling
+---
 
-## Prerequisites
-1. Node.js installed on your system
-2. Firebase account and project setup
-3. npm or yarn package manager
+## 🚀 Features
 
-## Firebase Setup
-1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
-2. Enable Firestore Database and Authentication services
-3. Configure your Firebase credentials in `src/firebase/config.js`
+- ✅ **Add new todos** with:
+  - Title
+  - Description
+  - Status (In-Progress / Completed)
+  - Due Date via calendar input
+- ✏️ **Edit and update** existing todos
+- ❌ **Delete tasks**
+- 🔍 **Search todos** by title or description
+- 🎯 **Filter todos** by:
+  - Status (In-Progress / Completed)
+  - Due Date (optional)
+- 📊 **Sort todos** by:
+  - Most Recent
+  - Oldest
+- 🌗 **Toggle between Light and Dark themes**
+- 🔄 **Real-time data synchronization** with Firebase
 
-## Project Structure
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React (using Context API and Hooks)
+- **Database**: Firebase Realtime Database
+- **HTTP Client**: Axios
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/todo-manager.git
+   cd todo-manager
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+
+### 🔧 Firebase Setup
+
+- Go to the Firebase Console.
+- Create a new project.
+- Enable the Realtime Database and set read/write permissions to public (for testing only):
+   ```json
+   {
+     "rules": {
+       ".read": true,
+       ".write": true
+     }
+   }
+   ```
+
+- Replace the base URL in your API calls with: `https://your-project-id.firebaseio.com/todo.json`
+
+---
+
+## 🗂️ Project Structure
+
 ```
-├── src/
-│   ├── components/     # React components
-│   ├── context/        # React context
-│   ├── assets/         # Static assets
-│   ├── firebase/       # Firebase configuration
-│   ├── App.jsx         # Main App component
-│   └── main.jsx        # Application entry point
-├── public/             # Public static files
-└── index.html          # HTML entry point
+src/
+│
+├── components/
+│   ├── TodoForm.js       # Form to add/edit todos
+│   ├── TodoList.js       # Renders todo items
+│   └── TodoItem.js       # Individual todo item
+│
+├── context/
+│   └── ThemeProvider.js   # Global state and logic
+│
+├── App.js
+└── index.js
 ```
 
-## Installation
-1. Clone the repository
-2. Install dependencies:
-```bash
-npm install
-```
+---
 
-## Firebase Configuration
-The application uses Firebase for backend services. The configuration is located in `src/firebase/config.js`. Make sure to update it with your Firebase project credentials:
+## 🖼️ Screenshots
 
-```javascript
-const firebaseConfig = {
-  databaseURL: "your-database-url",
-  projectId: "your-project-id"
-  // Add other Firebase config options as needed
-};
-```
+Include screenshots here to showcase the UI and functionality (e.g., light/dark mode, calendar input, list sorting/filtering).
 
-## Available Scripts
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
+---
 
-## Features
-- Real-time data synchronization with Firebase
-- User authentication
-- Todo CRUD operations
-- Responsive design
+## 📌 Future Enhancements
 
-## Development
-To start the development server:
-```bash
-npm run dev
-```
+- Drag & drop reordering
+- Category/label support
+- Notifications or due date reminders
+- Firebase Authentication
 
-## Building for Production
-To create a production build:
-```bash
-npm run build
-```
+---
 
-## License
-MIT
+## 🙌 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to open an issue or submit a pull request.
+
+
+## 📬 Contact
+Feel free to connect with me on LinkedIn. [https://www.linkedin.com/in/ayesha-shaw/]
