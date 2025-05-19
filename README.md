@@ -90,7 +90,12 @@ src/
 
 ## 🖼️ Screenshots
 
-Include screenshots here to showcase the UI and functionality (e.g., light/dark mode, calendar input, list sorting/filtering).
+### 🌞 Light Mode
+![Light Mode](./assets/img1.png)
+![Light Mode](./assets/img2.png)
+
+### 🌙 Dark Mode
+![Dark Mode](./assets/img3.png)
 
 ---
 
