@@ -36,7 +36,8 @@ The **Todo Manager App** is a powerful and user-friendly application built with 
 ## 📦 Installation
 
 1. **Clone the repository**
-   ```bash https://github.com/ayeshashaw/TodoList-With-FireBase.git
+   ```bash https:
+   https://github.com/ayeshashaw/TodoList-With-FireBase.git
    cd todo-manager
    ```
 
